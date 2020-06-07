@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mail.MailController">
+   <children>
+      <Label layoutX="13.0" layoutY="14.0" text="To:">
+         <font>
+            <Font name="Lucida Sans Regular" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="mailTo" layoutX="68.0" layoutY="15.0" prefHeight="26.0" prefWidth="524.0" />
+      <Label layoutX="13.0" layoutY="57.0" text="CC:">
+         <font>
+            <Font name="Lucida Sans Regular" size="24.0" />
+         </font>
+      </Label>
+       <JFXTextField fx:id="mailCC" layoutX="68.0" layoutY="58.0" prefHeight="26.0" prefWidth="524.0" />
+       <TextArea fx:id="mailMessage" layoutX="9.0" layoutY="105.0" prefHeight="271.0" prefWidth="581.0" />
+      <Button layoutX="504.0" layoutY="380.0" onMouseClicked="#handleMessageSend" prefHeight="42.0" prefWidth="86.0" text="SEND" />
+   </children>
+
+    <stylesheets>
+        <URL value="@mail.css" />
+    </stylesheets>
+</AnchorPane>
